@@ -1,0 +1,26 @@
+{
+  "name": "tagl-mithril",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "tagl": "^1.1.2"
+  },
+  "devDependencies": {
+    "ospec": "^3.0.1"
+  },
+  "scripts": {
+    "test": "node_modules/ospec/bin/ospec test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abulvenz/tagl-mithril.git"
+  },
+  "keywords": [],
+  "author": "abulvenz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abulvenz/tagl-mithril/issues"
+  },
+  "homepage": "https://github.com/abulvenz/tagl-mithril#readme"
+}
