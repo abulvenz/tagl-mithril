@@ -2,15 +2,19 @@
   "name": "tagl-mithril",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "dependencies": {
     "tagl": "^1.1.2"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
     "ospec": "^3.0.1"
   },
   "scripts": {
-    "test": "node_modules/ospec/bin/ospec test.js"
+    "compile": "babel --presets es2015,stage-0 -d lib/ src/",
+    "test": "node_modules/ospec/bin/ospec test.js",
+    "prepublish": "npm run compile"
   },
   "repository": {
     "type": "git",
