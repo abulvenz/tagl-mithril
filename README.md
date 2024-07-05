@@ -54,3 +54,17 @@ The above snippet will be rendered to the DOM like this:
 
 ... is that `$home` was transformed into an id attribute for the section.
 
+## How can I add calculated class names?
+You can use bracket notation `div[<class expression]` to use JS-expressions for class calculation like this
+```javascript
+
+const fieldClass = (idx) =>
+  (idx + trunc(idx / 8)) % 2 === 0 ? "black" : "white";
+
+...
+div.chessboard(
+   range(64).map(
+      idx => div[fieldClass(idx)]()
+   )
+)
+```
